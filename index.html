@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#071719">
+
+<title>Convalt Energy — Renewable Infrastructure, Solar Manufacturing &amp; Data Centers</title>
+<meta name="description" content="Convalt Energy develops, manufactures and operates renewable energy infrastructure — from advanced HJT solar modules to power generation, data centers and circular recycling.">
+<meta name="author" content="Convalt Energy">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Convalt Energy — Renewable Infrastructure &amp; Solar Manufacturing">
+<meta property="og:description" content="A cinematic 3D journey through Convalt Energy's world: solar manufacturing, power generation, data centers and circular recycling.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+  }
+}
+</script>
+</head>
+<body>
+
+<canvas id="webgl-canvas" aria-hidden="true"></canvas>
+
+<!-- ============================== HEADER ============================== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand" aria-label="Convalt Energy home">
+      <span class="brand-dot"></span>
+      <span class="brand-name">CONVALT<span class="accent">.</span></span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a class="nav-link" href="#manufacturing">Manufacturing</a>
+      <a class="nav-link" href="#power">Power Generation</a>
+      <a class="nav-link" href="#datacenters">Data Centers</a>
+      <a class="nav-link" href="#recycling">Recycling</a>
+      <a class="nav-link" href="#solis">Project Solis</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#contact" class="cta-primary">Get in touch</a>
+      <button class="menu-btn" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================== MOBILE DRAWER ============================== -->
+<div class="mobile-drawer" aria-hidden="true">
+  <div class="drawer-backdrop"></div>
+  <div class="drawer-panel">
+    <div class="drawer-top">
+      <span class="brand-name">CONVALT<span class="accent">.</span></span>
+      <button class="drawer-close" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <nav class="drawer-nav" aria-label="Mobile">
+      <a href="#manufacturing"><span class="idx">01</span>Manufacturing</a>
+      <a href="#power"><span class="idx">02</span>Power Generation</a>
+      <a href="#datacenters"><span class="idx">03</span>Data Centers</a>
+      <a href="#recycling"><span class="idx">04</span>Recycling</a>
+      <a href="#solis"><span class="idx">05</span>Project Solis</a>
+      <a href="#projects"><span class="idx">06</span>Projects</a>
+      <a href="#about"><span class="idx">07</span>About</a>
+      <a href="#media"><span class="idx">08</span>Media</a>
+    </nav>
+    <a href="#contact" class="cta-primary">Get in touch</a>
+  </div>
+</div>
+
+<!-- ============================== chapter chrome ============================== -->
+<div class="scroll-rail" aria-hidden="true">
+  <div class="scroll-rail-pct">00</div>
+</div>
+<div class="chapter-indicator" aria-hidden="true">
+  <span class="roman">I</span><span class="name">Overture</span>
+</div>
+
+<main class="scroll-root">
+
+  <!-- ========================= HERO ========================= -->
+  <section id="top" class="section hero">
+    <div class="section-inner">
+      <div class="hero-content reveal">
+        <div class="eyebrow-row">
+          <span class="label-eyebrow">Convalt Energy</span>
+          <span class="eyebrow-rule"></span>
+          <span class="label-eyebrow" style="color:var(--ink-400)">Renewable Infrastructure</span>
+        </div>
+        <h1 class="display-headline hero-h1">
+          Powering the<br>energy transition<br><span class="accent">with precision.</span>
+        </h1>
+        <p class="body-lg" style="max-width:42ch;">
+          Convalt Energy designs, manufactures and operates renewable energy
+          infrastructure — from advanced HJT solar modules to power generation,
+          data centers and circular recycling. One connected system, engineered
+          for the long horizon.
+        </p>
+        <div class="hero-actions">
+          <a href="#manufacturing" class="cta-primary">Enter the experience</a>
+          <a href="#projects" class="cta-ghost">View projects</a>
+        </div>
+        <div class="scroll-cue"><span>Scroll</span><span class="scroll-cue-line"></span><span>&#8595;</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CH. 01 MANUFACTURING ========================= -->
+  <section id="manufacturing" class="section min-vh">
+    <div class="section-inner">
+      <div class="grid-12">
+        <div class="col-5 sticky-col reveal">
+          <div class="eyebrow-row"><span class="label-eyebrow">Chapter 01</span><span class="eyebrow-rule"></span></div>
+          <h2 class="display-headline" style="font-size:clamp(2.2rem,4.5vw,3.6rem); margin-bottom:24px;">
+            Solar<br>manufacturing,<br><span class="accent">layer by layer.</span>
+          </h2>
+          <p class="body-lg" style="max-width:40ch; margin-bottom:28px;">
+            Convalt manufactures advanced glass-glass HJT (heterojunction) solar
+            modules. Each module is a precise stack of six engineered layers —
+            assembled for decades of performance in the field.
+          </p>
+          <p class="body-sm" style="max-width:40ch;">
+            Scroll to explore the exploded view. Each layer separates to reveal
+            the technical architecture of a Convalt module.
+          </p>
+        </div>
+
+        <div class="col-7 reveal">
+          <div class="spec-list">
+            <div class="spec-row"><span class="spec-num">01</span><span class="spec-name">Front Glass</span><span class="spec-desc">Low-iron tempered glass for maximum light transmission and weatherability.</span></div>
+            <div class="spec-row"><span class="spec-num">02</span><span class="spec-name">Front Encapsulant</span><span class="spec-desc">POE encapsulant protecting cells from moisture and mechanical stress.</span></div>
+            <div class="spec-row"><span class="spec-num">03</span><span class="spec-name">HJT Cell Matrix</span><span class="spec-desc">Heterojunction cells — high efficiency, low temperature coefficient.</span></div>
+            <div class="spec-row"><span class="spec-num">04</span><span class="spec-name">Rear Encapsulant</span><span class="spec-desc">Second encapsulant layer ensuring double-sided cell protection.</span></div>
+            <div class="spec-row"><span class="spec-num">05</span><span class="spec-name">Rear Glass</span><span class="spec-desc">Tempered rear glass for bifacial gain and structural rigidity.</span></div>
+            <div class="spec-row"><span class="spec-num">06</span><span class="spec-name">Aluminum Frame</span><span class="spec-desc">Anodized aluminum frame for mounting strength and corrosion resistance.</span></div>
+          </div>
+          <div class="stat-row">
+            <div class="stat"><b>HJT</b><span>Cell technology</span></div>
+            <div class="stat"><b>Glass&#8209;Glass</b><span>Module architecture</span></div>
+            <div class="stat"><b>6</b><span>Engineered layers</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CH. 02 POWER ========================= -->
+  <section id="power" class="section min-vh">
+    <div class="section-inner">
+      <div class="reveal" style="max-width:56ch;">
+        <div class="eyebrow-row"><span class="label-eyebrow">Chapter 02</span><span class="eyebrow-rule"></span></div>
+        <h2 class="display-headline" style="font-size:clamp(2.2rem,5.5vw,4.6rem); margin-bottom:30px;">From sunlight<br>to the grid.</h2>
+        <p class="body-lg" style="max-width:44ch; margin-bottom:24px;">
+          Convalt develops and operates renewable power generation assets —
+          utility-scale solar fields paired with transmission infrastructure
+          that moves clean energy from where it is generated to where it is
+          needed.
+        </p>
+        <p class="body-sm" style="max-width:44ch;">
+          Generation, infrastructure and energy flow form a single engineered
+          system. Each field is sited, oriented and wired for the long-term
+          economics of the transition.
+        </p>
+        <div class="pillar-row">
+          <div class="pillar"><div class="n">01</div><h3>Generation</h3><p>Utility-scale solar arrays optimized for site and climate.</p></div>
+          <div class="pillar"><div class="n">02</div><h3>Infrastructure</h3><p>Transmission towers, substations and grid interconnect.</p></div>
+          <div class="pillar"><div class="n">03</div><h3>Energy Flow</h3><p>Managed distribution from generation to offtake.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CH. 03 DATA CENTERS ========================= -->
+  <section id="datacenters" class="section min-vh">
+    <div class="section-inner">
+      <div class="grid-12">
+        <div class="col-6 reveal">
+          <div class="eyebrow-row"><span class="label-eyebrow">Chapter 03</span><span class="eyebrow-rule"></span></div>
+          <h2 class="display-headline" style="font-size:clamp(2.2rem,5.5vw,4.6rem); margin-bottom:28px;">
+            Digital<br>infrastructure,<br><span class="accent">at scale.</span>
+          </h2>
+          <p class="body-lg" style="max-width:38ch; margin-bottom:20px;">
+            Convalt develops large-scale data center facilities — the physical
+            backbone of the digital economy, sited alongside the renewable
+            energy we generate.
+          </p>
+          <p class="body-sm" style="max-width:38ch;">
+            Repeating server architecture, structured corridors, cooling
+            systems and network pathways are engineered for density and
+            operational discipline.
+          </p>
+        </div>
+        <div class="col-6 reveal" style="padding-top:8px;">
+          <div class="split-row"><span>Server racks</span><span>High-density compute housing</span></div>
+          <div class="split-row"><span>Structured corridors</span><span>Hot/cold aisle containment</span></div>
+          <div class="split-row"><span>Cooling infrastructure</span><span>Precision climate control</span></div>
+          <div class="split-row"><span>Network pathways</span><span>Fiber connectivity</span></div>
+          <div class="split-row"><span>Power infrastructure</span><span>On-site generation integration</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CH. 04 RECYCLING ========================= -->
+  <section id="recycling" class="section min-vh">
+    <div class="section-inner">
+      <div class="reveal" style="max-width:56ch; margin-bottom:56px;">
+        <div class="eyebrow-row"><span class="label-eyebrow">Chapter 04</span><span class="eyebrow-rule"></span></div>
+        <h2 class="display-headline" style="font-size:clamp(2.2rem,5.5vw,4.6rem); margin-bottom:28px;">Closing<br>the loop.</h2>
+        <p class="body-lg" style="max-width:44ch;">
+          Convalt recovers end-of-life solar modules, separates their
+          materials, and returns high-value inputs to the manufacturing
+          cycle — keeping waste out of landfills.
+        </p>
+      </div>
+      <div class="tile-grid cols-3 reveal">
+        <div class="tile"><div class="n">01</div><h3>Solar Module</h3><p>End-of-life modules enter the recovery stream.</p></div>
+        <div class="tile"><div class="n">02</div><h3>Material Separation</h3><p>Glass, cells, encapsulant and frame are separated.</p></div>
+        <div class="tile"><div class="n">03</div><h3>Recovery</h3><p>High-value silicon and silver are recovered.</p></div>
+        <div class="tile"><div class="n">04</div><h3>Recycling</h3><p>Recovered materials are processed for reuse.</p></div>
+        <div class="tile"><div class="n">05</div><h3>New Material</h3><p>Refined inputs re-enter the manufacturing cycle.</p></div>
+        <div class="tile"><div class="n">06</div><h3>Circular System</h3><p>A closed loop — waste becomes resource.</p></div>
+      </div>
+      <div class="loop-note reveal"><span class="glyph">&#8635;</span><span>A circular material economy — returning resources to production.</span></div>
+    </div>
+  </section>
+
+  <!-- ========================= CH. 05 PROJECT SOLIS ========================= -->
+  <section id="solis" class="section min-vh">
+    <div class="section-inner">
+      <div class="grid-12">
+        <div class="col-5 reveal">
+          <div class="eyebrow-row"><span class="label-eyebrow">Featured Project</span><span class="eyebrow-rule"></span></div>
+          <h2 class="display-headline" style="font-size:clamp(2.2rem,5.5vw,4.6rem); margin-bottom:28px;">Project<br><span class="accent">Solis.</span></h2>
+          <p class="body-lg" style="max-width:36ch; margin-bottom:20px;">
+            Project Solis is Convalt's proposed integrated renewable energy
+            campus — combining solar generation, manufacturing capacity and
+            supporting infrastructure into a single designed site.
+          </p>
+          <p class="body-sm" style="max-width:36ch; margin-bottom:28px;">
+            The campus is conceived as an architectural and engineering whole:
+            terrain, energy infrastructure and buildings working together as
+            one system.
+          </p>
+          <a href="#projects" class="cta-ghost">View portfolio</a>
+        </div>
+        <div class="col-7 reveal">
+          <div class="tile-grid cols-2">
+            <div class="solis-card"><div class="k">Scope</div><div class="v">Integrated campus</div></div>
+            <div class="solis-card"><div class="k">Generation</div><div class="v">Utility-scale solar</div></div>
+            <div class="solis-card"><div class="k">Manufacturing</div><div class="v">Module production</div></div>
+            <div class="solis-card"><div class="k">Infrastructure</div><div class="v">Grid interconnect</div></div>
+            <div class="solis-card"><div class="k">Status</div><div class="v">Proposed</div></div>
+            <div class="solis-card"><div class="k">Approach</div><div class="v">Architecture + energy</div></div>
+          </div>
+          <p class="body-sm" style="margin-top:28px; max-width:48ch;">
+            Project details are grounded in Convalt's public communications.
+            Renderings shown here are architectural massing studies, not
+            final designs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= PROJECTS (2D) ========================= -->
+  <section id="projects" class="section tint">
+    <div class="section-inner">
+      <div class="reveal" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:24px; margin-bottom:20px;">
+        <div>
+          <div class="eyebrow-row"><span class="label-eyebrow">Portfolio</span><span class="eyebrow-rule"></span></div>
+          <h2 class="display-headline" style="font-size:clamp(2rem,4.5vw,3.4rem);">Projects in<br>development.</h2>
+        </div>
+        <p class="body-sm" style="max-width:34ch;">A selection of Convalt's active and planned projects across manufacturing, generation, infrastructure and recycling.</p>
+      </div>
+      <div class="table-wrap reveal">
+        <table class="projects-table">
+          <thead><tr><th>Project</th><th>Location</th><th>Category</th><th>Capacity</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td class="pname">Project Solis</td><td>United States</td><td>Integrated Campus</td><td>Utility-scale</td><td><span class="status-tag">Proposed</span></td></tr>
+            <tr><td class="pname">Solar Manufacturing Facility</td><td>United States</td><td>Manufacturing</td><td>HJT Modules</td><td><span class="status-tag is-live">Operational</span></td></tr>
+            <tr><td class="pname">Utility Solar Field</td><td>United States</td><td>Power Generation</td><td>Utility-scale</td><td><span class="status-tag">In Development</span></td></tr>
+            <tr><td class="pname">Data Center Campus</td><td>United States</td><td>Digital Infrastructure</td><td>Renewable-powered</td><td><span class="status-tag">Planned</span></td></tr>
+            <tr><td class="pname">Module Recycling Program</td><td>United States</td><td>Recycling</td><td>Circular recovery</td><td><span class="status-tag is-live">Active</span></td></tr>
+            <tr><td class="pname">Transmission Interconnect</td><td>United States</td><td>Infrastructure</td><td>Grid-scale</td><td><span class="status-tag">In Development</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= ABOUT (2D) ========================= -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <div class="grid-12 reveal">
+        <div class="col-4">
+          <div class="eyebrow-row"><span class="label-eyebrow">Company</span><span class="eyebrow-rule"></span></div>
+          <h2 class="display-headline" style="font-size:clamp(2rem,4vw,3rem);">One system,<br>engineered<br>end to end.</h2>
+        </div>
+        <div class="col-8">
+          <p class="body-lg" style="max-width:60ch; margin-bottom:20px;">
+            Convalt Energy is a renewable infrastructure company. We design,
+            manufacture and operate the physical assets of the energy transition —
+            solar modules, power generation, data centers and the recycling
+            systems that close the loop.
+          </p>
+          <p class="body-sm" style="max-width:60ch;">
+            Our work spans the full lifecycle: from the cell architecture inside
+            a module to the grid that carries its power, to the data centers that
+            consume it, to the recovery process that returns spent modules to
+            the manufacturing line. Each stage is designed in relation to the
+            others.
+          </p>
+          <div class="pillar-row" style="margin-top:36px; padding-top:32px; border-top:1px solid rgba(255,255,255,0.1);">
+            <div class="pillar" style="border-top:none; padding-top:0;"><div class="n">01</div><h3>Manufacturing</h3><p>Advanced HJT solar module production.</p></div>
+            <div class="pillar" style="border-top:none; padding-top:0;"><div class="n">02</div><h3>Generation</h3><p>Utility-scale renewable power assets.</p></div>
+            <div class="pillar" style="border-top:none; padding-top:0;"><div class="n">03</div><h3>Infrastructure</h3><p>Data centers and grid interconnect.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= MEDIA (2D) ========================= -->
+  <section id="media" class="section tint">
+    <div class="section-inner">
+      <div class="reveal" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:24px; margin-bottom:20px;">
+        <div>
+          <div class="eyebrow-row"><span class="label-eyebrow">Media &amp; Press</span><span class="eyebrow-rule"></span></div>
+          <h2 class="display-headline" style="font-size:clamp(2rem,4.5vw,3.4rem);">Latest<br>from Convalt.</h2>
+        </div>
+        <a href="#contact" class="cta-ghost">Press inquiries</a>
+      </div>
+      <div class="tile-grid cols-3 reveal">
+        <article class="tile">
+          <div class="tile-tag-row"><span class="tile-tag">Press</span><span class="tile-date">2025</span></div>
+          <h3>Convalt advances HJT module manufacturing capacity</h3>
+          <p>New production line strengthens domestic supply of high-efficiency heterojunction solar modules.</p>
+          <span class="read-more">Read more &rarr;</span>
+        </article>
+        <article class="tile">
+          <div class="tile-tag-row"><span class="tile-tag">Announcement</span><span class="tile-date">2025</span></div>
+          <h3>Project Solis enters next development phase</h3>
+          <p>Integrated renewable campus moves forward with site planning and infrastructure scoping.</p>
+          <span class="read-more">Read more &rarr;</span>
+        </article>
+        <article class="tile">
+          <div class="tile-tag-row"><span class="tile-tag">News</span><span class="tile-date">2024</span></div>
+          <h3>Recycling program recovers high-value module materials</h3>
+          <p>Convalt's circular recovery process returns silicon and silver to the manufacturing cycle.</p>
+          <span class="read-more">Read more &rarr;</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CONTACT (2D) ========================= -->
+  <section id="contact" class="section min-vh">
+    <div class="section-inner">
+      <div class="grid-12">
+        <div class="col-7 reveal">
+          <div class="eyebrow-row"><span class="label-eyebrow">Contact</span><span class="eyebrow-rule"></span></div>
+          <h2 class="display-headline" style="font-size:clamp(2.4rem,7vw,6rem); margin-bottom:36px;">
+            Let's build<br>the transition<br><span class="accent">together.</span>
+          </h2>
+          <p class="body-lg" style="max-width:38ch; margin-bottom:20px;">
+            For partnerships, project inquiries, press and general contact,
+            reach out to the Convalt Energy team.
+          </p>
+          <div class="contact-cols">
+            <div class="contact-block"><div class="k">General</div><a href="mailto:info@convalt.com">info@convalt.com</a></div>
+            <div class="contact-block"><div class="k">Press</div><a href="mailto:press@convalt.com">press@convalt.com</a></div>
+            <div class="contact-block"><div class="k">Partnerships</div><a href="mailto:partners@convalt.com">partners@convalt.com</a></div>
+            <div class="contact-block"><div class="k">Careers</div><a href="mailto:careers@convalt.com">careers@convalt.com</a></div>
+          </div>
+        </div>
+
+        <div class="col-5 reveal">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-field">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+              <label for="cf-msg">Message</label>
+              <textarea id="cf-msg" name="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="cta-primary">Send message</button>
+            <p id="contact-note" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+
+      <footer class="site-footer reveal">
+        <div class="brand">
+          <span class="brand-dot"></span>
+          <span class="brand-name">CONVALT<span class="accent">.</span></span>
+        </div>
+        <div class="footer-links">
+          <a href="#manufacturing">Manufacturing</a>
+          <a href="#power">Power</a>
+          <a href="#datacenters">Data Centers</a>
+          <a href="#recycling">Recycling</a>
+          <a href="#solis">Solis</a>
+        </div>
+        <div class="footer-copy">&copy; <span id="year">2026</span> Convalt Energy. All rights reserved.</div>
+      </footer>
+    </div>
+  </section>
+
+</main>
+
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
